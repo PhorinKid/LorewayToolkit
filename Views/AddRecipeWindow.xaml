@@ -1,0 +1,225 @@
+<Window x:Class="MabinogiCraftOptimizer.Views.AddRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="레시피 추가" 
+        Height="620" 
+        Width="490"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        FontFamily="Malgun Gothic"
+        Background="#08111C">
+    <Grid Margin="18">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/> <!-- 0. 제목 -->
+            <RowDefinition Height="Auto"/> <!-- 1. 결과 아이템 & 카테고리 & 수량 -->
+            <RowDefinition Height="Auto"/> <!-- 2. 재료 입력 & 추가 -->
+            <RowDefinition Height="*"/>    <!-- 3. 현재 재료 목록 -->
+            <RowDefinition Height="Auto"/> <!-- 4. 에러 메시지 -->
+            <RowDefinition Height="Auto"/> <!-- 5. 저장 / 취소 버튼 -->
+        </Grid.RowDefinitions>
+
+        <!-- 0. 타이틀 (브리레흐 White/Gold) -->
+        <TextBlock Grid.Row="0" 
+                   Text="레시피 추가" 
+                   FontSize="18" 
+                   FontWeight="Bold" 
+                   Foreground="#F7F7F2" 
+                   Margin="0,0,0,14"/>
+
+        <!-- 1. 결과 아이템 & 카테고리 & 수량 -->
+        <Border Grid.Row="1" Style="{StaticResource DarkCardStyle}" Margin="0,0,0,12" Padding="12">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition Width="70"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="결과 아이템 이름" FontSize="12" FontWeight="SemiBold" Foreground="#B7C2CE" Margin="0,0,0,4"/>
+                <TextBox Grid.Row="1" Grid.Column="0" 
+                         Style="{StaticResource DarkTextBox}"
+                         Text="{Binding ItemName, UpdateSourceTrigger=PropertyChanged}" 
+                         FontSize="13" 
+                         Padding="6,4" 
+                         Margin="0,0,8,0"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="카테고리" FontSize="12" FontWeight="SemiBold" Foreground="#B7C2CE" Margin="0,0,0,4"/>
+                <ComboBox Grid.Row="1" Grid.Column="1"
+                          ItemsSource="{Binding AvailableCategories}"
+                          SelectedItem="{Binding SelectedCategory, Mode=TwoWay}"
+                          DisplayMemberPath="Display"
+                          Background="#122033"
+                          Foreground="#F7F7F2"
+                          BorderBrush="#263A4F"
+                          BorderThickness="1"
+                          FontSize="13"
+                          Padding="8,0,24,0"
+                          Margin="0,0,8,0"
+                          VerticalContentAlignment="Center"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="2" Text="결과 수량" FontSize="12" FontWeight="SemiBold" Foreground="#B7C2CE" Margin="0,0,0,4"/>
+                <TextBox Grid.Row="1" Grid.Column="2" 
+                         Style="{StaticResource DarkTextBox}"
+                         Text="{Binding OutputQuantityText, UpdateSourceTrigger=PropertyChanged}" 
+                         FontSize="13" 
+                         Padding="6,4" 
+                         HorizontalContentAlignment="Center"/>
+            </Grid>
+        </Border>
+
+        <!-- 2. 재료 입력 및 [추가] 버튼 -->
+        <Border Grid.Row="2" Style="{StaticResource DarkCardStyle}" Margin="0,0,0,12" Padding="12">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="65"/>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="재료 이름" FontSize="12" FontWeight="SemiBold" Foreground="#B7C2CE" Margin="0,0,0,4"/>
+                <TextBox Grid.Row="1" Grid.Column="0" 
+                         x:Name="MatNameTextBox"
+                         Style="{StaticResource DarkTextBox}"
+                         Text="{Binding MaterialNameInput, UpdateSourceTrigger=PropertyChanged}" 
+                         FontSize="13" 
+                         Padding="6,4" 
+                         Margin="0,0,6,0"
+                         KeyDown="OnMaterialInputKeyDown"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="수량" FontSize="12" FontWeight="SemiBold" Foreground="#B7C2CE" Margin="0,0,0,4"/>
+                <TextBox Grid.Row="1" Grid.Column="1" 
+                         Style="{StaticResource DarkTextBox}"
+                         Text="{Binding MaterialQuantityInputText, UpdateSourceTrigger=PropertyChanged}" 
+                         FontSize="13" 
+                         Padding="6,4" 
+                         HorizontalContentAlignment="Center" 
+                         Margin="0,0,6,0"
+                         KeyDown="OnMaterialInputKeyDown"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="2" Text="구슬(선택)" FontSize="12" FontWeight="SemiBold" Foreground="#D9B63C" Margin="0,0,0,4"/>
+                <TextBox Grid.Row="1" Grid.Column="2" 
+                         Style="{StaticResource DarkTextBox}"
+                         Text="{Binding MaterialOrbCountText, UpdateSourceTrigger=PropertyChanged}" 
+                         Foreground="#EAC84E"
+                         CaretBrush="#D9B63C"
+                         FontSize="13" 
+                         Padding="6,4" 
+                         HorizontalContentAlignment="Center" 
+                         Margin="0,0,6,0"
+                         KeyDown="OnMaterialInputKeyDown"/>
+
+                <Button Grid.Row="1" Grid.Column="3" 
+                        Content="추가" 
+                        Style="{StaticResource PrimaryButton}"
+                        Click="OnAddMaterialClick"
+                        Padding="12,4" 
+                        FontSize="12" 
+                        FontWeight="Bold"/>
+            </Grid>
+        </Border>
+
+        <!-- 3. 현재 등록된 재료 목록 -->
+        <GroupBox Grid.Row="3" Header="현재 재료 목록" FontSize="12" FontWeight="SemiBold" Foreground="#B7C2CE" Margin="0,0,0,10">
+            <DataGrid ItemsSource="{Binding Materials}" 
+                      Style="{StaticResource DarkDataGrid}"
+                      RowHeight="30"
+                      Margin="2">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="재료 이름" Binding="{Binding Name}" Width="*" FontWeight="Normal">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="Foreground" Value="#F7F7F2"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                                <Setter Property="Margin" Value="6,0,0,0"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="필요 수량" Binding="{Binding Quantity, StringFormat={}{0}개}" Width="80" FontWeight="SemiBold">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                                <Setter Property="Foreground" Value="#B7C2CE"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="구슬 (개당)" Binding="{Binding OrbCountDisplay}" Width="85">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                                <Setter Property="Foreground" Value="#D9B63C"/>
+                                <Setter Property="FontWeight" Value="SemiBold"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTemplateColumn Header="관리" Width="55">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="삭제" 
+                                        Click="OnRemoveMaterialClick" 
+                                        FontSize="11" 
+                                        Padding="4,1" 
+                                        Background="#451A1A" 
+                                        Foreground="#E77E28" 
+                                        BorderThickness="0" 
+                                        Cursor="Hand">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border Background="{TemplateBinding Background}" CornerRadius="3" Padding="{TemplateBinding Padding}">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+
+        <!-- 4. 에러 메시지 -->
+        <TextBlock Grid.Row="4" 
+                   Text="{Binding ErrorMessage}" 
+                   Foreground="#E77E28" 
+                   FontSize="12" 
+                   FontWeight="SemiBold" 
+                   TextWrapping="Wrap" 
+                   Margin="2,0,2,8"/>
+
+        <!-- 5. 하단 버튼 영역 -->
+        <Grid Grid.Row="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" 
+                    Content="레시피 저장" 
+                    Style="{StaticResource PrimaryButton}"
+                    Click="OnSaveRecipeClick"
+                    Height="36" 
+                    FontSize="14" 
+                    FontWeight="Bold" 
+                    Margin="0,0,8,0"/>
+
+            <Button Grid.Column="1" 
+                    Content="취소" 
+                    Style="{StaticResource SecondaryButton}"
+                    Click="OnCancelClick"
+                    Height="36" 
+                    Width="80" 
+                    FontSize="13"/>
+        </Grid>
+    </Grid>
+</Window>

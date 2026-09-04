@@ -1,0 +1,516 @@
+[
+  {
+    "itemName": "소울 리버레이트 보우",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "브리 레흐의 코어",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Orb",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": 100,
+        "receivedQuantity": 1
+      }
+    ]
+  },
+  {
+    "itemName": "브리 레흐의 정수",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Orb",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": 100,
+        "receivedQuantity": 1
+      }
+    ]
+  },
+  {
+    "itemName": "찬란한 기억의 결정",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Craft",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "마력이 충만한 마력석",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Craft",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "순도 높은 융합의 실리엔",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Craft",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "정교한 스트링",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Craft",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "마력이 깃든 깃털",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Craft",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "의지가 잠든 룬스톤",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "주황빛 기억의 조각",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Orb",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": 25,
+        "receivedQuantity": 1
+      }
+    ]
+  },
+  {
+    "itemName": "아라고나이트",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Orb",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": 3,
+        "receivedQuantity": 1
+      }
+    ]
+  },
+  {
+    "itemName": "마력이 깃든 융합제",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Npc",
+        "npcName": "레넨 상점 (무리아스)",
+        "unitGoldCost": 500000,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "퓨어 젬스톤",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Craft",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "브리 레흐의 기운이 깃든 문장",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Orb",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": 3,
+        "receivedQuantity": 1
+      }
+    ]
+  },
+  {
+    "itemName": "오묘한 마력석",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Orb",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": 3,
+        "receivedQuantity": 1
+      }
+    ]
+  },
+  {
+    "itemName": "강화된 실리엔",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Craft",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "순도 높은 마력의 결정",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Orb",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": 3,
+        "receivedQuantity": 1
+      }
+    ]
+  },
+  {
+    "itemName": "순도 높은 힘의 결정",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Craft",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "온전한 실리엔",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "빛바랜 자수실",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Orb",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": 3,
+        "receivedQuantity": 1
+      }
+    ]
+  },
+  {
+    "itemName": "산산조각난 검은 금속",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "순백의 깃털",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Orb",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": 1,
+        "receivedQuantity": 1
+      }
+    ]
+  },
+  {
+    "itemName": "마력석",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Orb",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": 1,
+        "receivedQuantity": 1
+      }
+    ]
+  },
+  {
+    "itemName": "젬스톤 파우더",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "각성된 힘의 가루",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Npc",
+        "npcName": "스튜어트 비밀상점",
+        "unitGoldCost": 50000,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "티어드롭 젬스톤",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Ducat",
+        "npcName": "교역소 상점",
+        "unitGoldCost": null,
+        "requiredCurrency": 35000,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "순도 높은 강화제",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "각성된 힘의 조각",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "각성된 힘의 결정",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      }
+    ]
+  },
+  {
+    "itemName": "깨어난 힘의 정수",
+    "methods": [
+      {
+        "type": "Auction",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": null,
+        "receivedQuantity": null
+      },
+      {
+        "type": "Orb",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": 5,
+        "receivedQuantity": 1
+      }
+    ]
+  }
+]

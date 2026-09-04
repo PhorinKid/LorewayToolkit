@@ -1,0 +1,50 @@
+## .NET 빌드 산출물 및 배포 폴더
+[Bb]in/
+[Oo]bj/
+[Pp]ublish/
+[Ll]og/
+[Ll]ogs/
+MabinogiCraftOptimizer/
+LorewayToolkit/
+*.exe
+*.pdb
+
+## Visual Studio & JetBrains 개인 설정 및 캐시
+.vs/
+.idea/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.sln.docstates
+
+## Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+## 🔒 민감 정보 (NEXON API Key 유출 방지)
+.env
+.env.*
+!.env.example
+secrets.json
+appsettings*.local.json
+
+## 🔒 로컬 동적 캐시 및 개인 사용자 데이터
+Data/auction-cache.json
+Data/inventory.json
+
+## 참조용 임시 문서 및 스프레드시트
+*.xlsx
+*.xls
+*.csv
+
+## OS 생성 임시 파일
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
