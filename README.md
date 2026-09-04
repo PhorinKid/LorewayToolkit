@@ -203,8 +203,8 @@ UI와 비즈니스 로직의 결합도를 완전히 제거하고, 테스트 가�
 ### Option B. 소스 코드 빌드 및 실행 (.NET 8 SDK 필요)
 ```bash
 # 1. 저장소 클론
-git clone https://github.com/your-username/MabinogiCraftOptimizer.git
-cd MabinogiCraftOptimizer
+git clone https://github.com/PhorinKid/LorewayToolkit.git
+cd LorewayToolkit
 
 # 2. .env 설정 (선택 사항)
 cp .env.example .env
