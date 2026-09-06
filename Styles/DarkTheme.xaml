@@ -469,10 +469,11 @@
         <Setter Property="FontSize" Value="13"/>
         <Setter Property="Padding" Value="10,0,32,0"/>
         <Setter Property="MinHeight" Value="34"/>
+        <Setter Property="MaxDropDownHeight" Value="420"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
         <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
-        <Setter Property="ScrollViewer.CanContentScroll" Value="True"/>
+        <Setter Property="ScrollViewer.CanContentScroll" Value="False"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ComboBox}">
@@ -513,9 +514,12 @@
                                         BorderBrush="{StaticResource BorderMainBrush}"
                                         BorderThickness="1"
                                         CornerRadius="6"
-                                        Padding="2"
+                                        Padding="3,4"
                                         Margin="0,2,0,0">
-                                    <ScrollViewer SnapsToDevicePixels="True">
+                                    <ScrollViewer SnapsToDevicePixels="True"
+                                                  CanContentScroll="False"
+                                                  VerticalScrollBarVisibility="Auto"
+                                                  HorizontalScrollBarVisibility="Disabled">
                                         <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
                                                         KeyboardNavigation.DirectionalNavigation="Contained"/>
                                     </ScrollViewer>
@@ -525,7 +529,7 @@
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="HasItems" Value="False">
-                            <Setter TargetName="DropDownBorder" Property="MinHeight" Value="95"/>
+                            <Setter TargetName="DropDownBorder" Property="MinHeight" Value="60"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Foreground" Value="{StaticResource TextDisabledBrush}"/>

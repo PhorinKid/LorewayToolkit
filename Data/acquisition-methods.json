@@ -512,5 +512,17 @@
         "receivedQuantity": 1
       }
     ]
+  },
+  {
+    "itemName": "초록빛 기억의 조각",
+    "methods": [
+      {
+        "type": "Orb",
+        "npcName": null,
+        "unitGoldCost": null,
+        "requiredCurrency": 25,
+        "receivedQuantity": 1
+      }
+    ]
   }
 ]

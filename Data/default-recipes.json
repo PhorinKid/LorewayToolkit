@@ -212,5 +212,302 @@
         "quantity": 10
       }
     ]
+  },
+  {
+    "itemName": "소울 리버레이트 이터널 애로우",
+    "outputQuantity": 1,
+    "category": "Weapon",
+    "materials": [
+      {
+        "name": "브리 레흐의 코어",
+        "quantity": 4
+      },
+      {
+        "name": "브리 레흐의 정수",
+        "quantity": 8
+      },
+      {
+        "name": "견고한 기억의 결정",
+        "quantity": 5
+      },
+      {
+        "name": "마력이 충만한 고리",
+        "quantity": 1
+      },
+      {
+        "name": "순도 높은 융합의 나무판",
+        "quantity": 1
+      },
+      {
+        "name": "단단한 금속",
+        "quantity": 10
+      },
+      {
+        "name": "마력이 깃든 늑대의 이빨",
+        "quantity": 24
+      },
+      {
+        "name": "마력의 정수",
+        "quantity": 100
+      }
+    ]
+  },
+  {
+    "itemName": "견고한 기억의 결정",
+    "outputQuantity": 1,
+    "category": "CraftMaterial",
+    "materials": [
+      {
+        "name": "금빛 기억의 조각",
+        "quantity": 3
+      },
+      {
+        "name": "마력이 깃든 융합제",
+        "quantity": 5
+      },
+      {
+        "name": "오피먼트",
+        "quantity": 10
+      },
+      {
+        "name": "퓨어 젬스톤",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "itemName": "마력이 깃든 늑대의 이빨",
+    "outputQuantity": 1,
+    "category": "CraftMaterial",
+    "materials": [
+      {
+        "name": "각성된 힘의 가루",
+        "quantity": 10
+      },
+      {
+        "name": "단단한 늑대의 이빨",
+        "quantity": 7
+      },
+      {
+        "name": "마력석",
+        "quantity": 20
+      },
+      {
+        "name": "젬스톤 파우더",
+        "quantity": 20
+      }
+    ]
+  },
+  {
+    "itemName": "단단한 금속",
+    "outputQuantity": 1,
+    "category": "CraftMaterial",
+    "materials": [
+      {
+        "name": "단단하게 결정화된 광물 조각",
+        "quantity": 6
+      },
+      {
+        "name": "마력이 깃든 융합제",
+        "quantity": 1
+      },
+      {
+        "name": "무른 금속 파편",
+        "quantity": 5
+      },
+      {
+        "name": "퓨어 젬스톤",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "itemName": "마력이 충만한 고리",
+    "outputQuantity": 1,
+    "category": "CraftMaterial",
+    "materials": [
+      {
+        "name": "강화된 금속판",
+        "quantity": 3
+      },
+      {
+        "name": "마력이 깃든 융합제",
+        "quantity": 3
+      },
+      {
+        "name": "브리 레흐의 기운이 깃든 문장",
+        "quantity": 3
+      },
+      {
+        "name": "오묘한 가죽 조각",
+        "quantity": 10
+      },
+      {
+        "name": "특급 나무장작",
+        "quantity": 100
+      }
+    ]
+  },
+  {
+    "itemName": "강화된 금속판",
+    "outputQuantity": 1,
+    "category": "CraftMaterial",
+    "materials": [
+      {
+        "name": "금판",
+        "quantity": 50
+      },
+      {
+        "name": "동판",
+        "quantity": 50
+      },
+      {
+        "name": "미스릴판",
+        "quantity": 50
+      },
+      {
+        "name": "순도 높은 강화제",
+        "quantity": 30
+      },
+      {
+        "name": "은판",
+        "quantity": 50
+      },
+      {
+        "name": "철판",
+        "quantity": 50
+      }
+    ]
+  },
+  {
+    "itemName": "순도 높은 융합의 나무판",
+    "outputQuantity": 1,
+    "category": "CraftMaterial",
+    "materials": [
+      {
+        "name": "순도 높은 마력의 결정",
+        "quantity": 10
+      },
+      {
+        "name": "순도 높은 힘의 결정",
+        "quantity": 5
+      },
+      {
+        "name": "마력이 깃든 융합제",
+        "quantity": 1
+      },
+      {
+        "name": "최고급 나무장작",
+        "quantity": 100
+      }
+    ]
+  },
+  {
+    "itemName": "소울 리버레이트 힐링 원드",
+    "outputQuantity": 1,
+    "category": "Weapon",
+    "materials": [
+      {
+        "name": "강렬한 기억의 결정",
+        "quantity": 10
+      },
+      {
+        "name": "마력이 깃든 마법사의 보석",
+        "quantity": 24
+      },
+      {
+        "name": "마력이 담긴 마력석",
+        "quantity": 10
+      },
+      {
+        "name": "마력이 충만한 마력석",
+        "quantity": 2
+      },
+      {
+        "name": "브리 레흐의 정수",
+        "quantity": 10
+      },
+      {
+        "name": "브리 레흐의 코어",
+        "quantity": 5
+      },
+      {
+        "name": "순도 높은 융합의 실리엔",
+        "quantity": 2
+      },
+      {
+        "name": "재생의 가루",
+        "quantity": 100
+      }
+    ]
+  },
+  {
+    "itemName": "강렬한 기억의 결정",
+    "outputQuantity": 1,
+    "category": "CraftMaterial",
+    "materials": [
+      {
+        "name": "마력이 깃든 융합제",
+        "quantity": 5
+      },
+      {
+        "name": "바리사이트",
+        "quantity": 10
+      },
+      {
+        "name": "초록빛 기억의 조각",
+        "quantity": 3
+      },
+      {
+        "name": "퓨어 젬스톤",
+        "quantity": 2
+      }
+    ]
+  },
+  {
+    "itemName": "마력이 깃든 마법사의 보석",
+    "outputQuantity": 1,
+    "category": "CraftMaterial",
+    "materials": [
+      {
+        "name": "각성된 힘의 가루",
+        "quantity": 10
+      },
+      {
+        "name": "마력석",
+        "quantity": 20
+      },
+      {
+        "name": "녹음이 깃든 마법사의 보석",
+        "quantity": 7
+      },
+      {
+        "name": "젬스톤 파우더",
+        "quantity": 20
+      }
+    ]
+  },
+  {
+    "itemName": "마력이 담긴 마력석",
+    "outputQuantity": 1,
+    "category": "CraftMaterial",
+    "materials": [
+      {
+        "name": "마력이 깃든 융합제",
+        "quantity": 1
+      },
+      {
+        "name": "침식된 광물 조각",
+        "quantity": 6
+      },
+      {
+        "name": "텅 빈 마력석",
+        "quantity": 5
+      },
+      {
+        "name": "퓨어 젬스톤",
+        "quantity": 1
+      }
+    ]
   }
 ]

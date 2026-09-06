@@ -1,17 +1,3 @@
 [
-  {
-    "itemName": "소울 리버레이트 힐링 원드",
-    "outputQuantity": 1,
-    "category": "Weapon",
-    "materials": [
-      {
-        "name": "브리 레흐의 코어",
-        "quantity": 5
-      },
-      {
-        "name": "브리 레흐의 정수",
-        "quantity": 10
-      }
-    ]
-  }
+
 ]

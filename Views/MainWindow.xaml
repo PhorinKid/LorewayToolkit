@@ -111,6 +111,8 @@
                               SelectedItem="{Binding SelectedRecipe, Mode=TwoWay}"
                               DisplayMemberPath="ItemName"
                               Height="36"
+                              MaxDropDownHeight="420"
+                              ScrollViewer.CanContentScroll="False"
                               Background="#122033"
                               Foreground="#F7F7F2"
                               BorderBrush="#263A4F"
